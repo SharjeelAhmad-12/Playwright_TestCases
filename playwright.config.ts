@@ -36,26 +36,26 @@ export default defineConfig({
         }
       },
     },
-    {
-      name: 'firefox',
-      use: { 
-        ...devices['Desktop Firefox'],
-        // Override for Firefox
-        launchOptions: {
-          args: ['--disable-web-security']
-        }
-      },
-    },
-    {
-      name: 'webkit',
-      use: { 
-        ...devices['Desktop Safari'],
-        // Override for WebKit
-        launchOptions: {
-          args: ['--disable-web-security']
-        }
-      },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { 
+    //     ...devices['Desktop Firefox'],
+    //     // Override for Firefox
+    //     launchOptions: {
+    //       args: ['--disable-web-security']
+    //     }
+    //   },
+    // },
+    // {
+    //   name: 'webkit',
+    //   use: { 
+    //     ...devices['Desktop Safari'],
+    //     // Override for WebKit
+    //     launchOptions: {
+    //       args: ['--disable-web-security']
+    //     }
+    //   },
+    // },
   ],
   outputDir: 'test-results/',
   // Global timeout for tests
