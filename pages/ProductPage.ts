@@ -496,6 +496,7 @@ export class ProductPage {
           console.log('✓ Shoe likely added to cart (no success message found)');
         }
         
+        
         await this.page.waitForTimeout(2000);
       } else {
         throw new Error('Add to Cart button not found for shoe with any selector');
